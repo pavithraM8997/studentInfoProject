@@ -1,0 +1,16 @@
+/* ViewStudent.css */
+
+.view-student-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.view-student-header {
+    font-size: 24px;
+    font-weight: bold;
+}

@@ -1,0 +1,95 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and container styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container1 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+  }
+  
+  /* Title and student ID display */
+  p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1422a0d1;
+  }
+  
+   p span {
+    font-weight: normal;
+    color: #f526cc;
+  }
+  
+  /* Details section */
+  .details {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .details p {
+    margin-bottom: 15px;
+  }
+  
+  .details strong {
+    font-weight: bold;
+    color: #3b12d2;
+  }
+  
+  /* Loading and error message */
+  .loading,
+  .error {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #999;
+  }
+  
+  /* Make sure to show the loading or error message only */
+  .loading {
+    color: #00bcd4;
+  }
+  
+  .error {
+    color: #e74c3c;
+  }
+  
+  /* Style for the footer or extra information */
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Responsive for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .details p {
+      font-size: 14px;
+    }
+  }
+  

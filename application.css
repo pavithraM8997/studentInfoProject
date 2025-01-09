@@ -1,0 +1,192 @@
+
+
+h1 {
+    color: #4164ee;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    width: 40%;
+    /* max-width: 500px; */
+    padding: 30px;
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    background-color: white;
+    margin-left: 350px;
+    
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: hsla(218, 80%, 6%, 0.82);
+}
+
+.form-group input,
+.form-group select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid rgba(16, 3, 3, 0.692);
+    border-radius: 4px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #236cda;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.success-message {
+    text-align: center;
+    color: #983fd4f1;
+    font-size: 18px;
+    padding: 0px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    
+}
+li{
+    width: 800px;
+    max-width: 400%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+
+}
+/* Table Container */
+.table {
+    width: 100%;
+    overflow-x: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin-left: 0px;
+}
+
+/* Header Styling */
+thead th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 2px solid #e0e0e0;
+    width: 100;
+}
+
+/* Row and Cell Styling */
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody td {
+    padding: 12px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Hover Effect */
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+.delete-button {
+    margin: 10px;
+    padding: 8px 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tbody td {
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+    }
+    tbody td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-left: 15px;
+        font-weight: bold;
+        color: #4CAF50;
+    }
+}
+
+
+/* Flash message container */
+
+    /* Flash message container */
+
+    .flash-message {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        color: white;
+        border-radius: 5px;
+        z-index: 1000;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .flash-message.success {
+        background-color: #4caf50;
+    }
+    
+    .flash-message.error {
+        background-color: #f44336;
+    }
+    
+
